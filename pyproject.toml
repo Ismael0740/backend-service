@@ -8,12 +8,8 @@ dependencies = [
     "fastapi[standard]",
 ]
 
-[tool.uv]
-dev-dependencies = [
-    "ruff",
-    "pyright",
-    "pytest",
-]
+[dependency-groups]
+dev = ["ruff", "pyright", "pytest"]
 
 [tool.ruff]
 line-length = 100
@@ -24,11 +20,3 @@ lint.select = ["E", "F", "I", "B"]  # errores básicos + imports + bugbear
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]
-
-
-[dependency-groups]
-dev = [
-    "pyright>=1.1.407",
-    "pytest>=9.0.2",
-    "ruff>=0.14.8",
-]

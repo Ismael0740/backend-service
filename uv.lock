@@ -49,13 +49,13 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "fastapi", extras = ["standard"], specifier = ">=0.124.2" }]
+requires-dist = [{ name = "fastapi", extras = ["standard"] }]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "pyright", specifier = ">=1.1.407" },
-    { name = "pytest", specifier = ">=9.0.2" },
-    { name = "ruff", specifier = ">=0.14.8" },
+    { name = "pyright" },
+    { name = "pytest" },
+    { name = "ruff" },
 ]
 
 [[package]]
